@@ -8,48 +8,64 @@
 }
 body {
   width: 100%;
+  max-width: 600px;
   justify-content: center;
   align-items: center;
   display: flex;
   flex-direction: column;
-  padding: 1rem;
+  padding: 2rem 3rem;
+  border: 1px solid rgb(228, 228, 228);
+  margin: 20px auto 0 auto;
+  border-radius: 2rem;
 }
+
+header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 0 2rem 0;
+  border-bottom: 1px solid rgb(228, 228, 228);
+}
+
+h1 {
+  font-size: 25px;
+}
+
 .container {
   width: 100%;
-  max-width: 600px;
-  min-height: 80vh;
-  max-height: 80vh;
+  min-height: 75vh;
+  max-height: 75vh;
   overflow-wrap: normal;
   overflow-y: auto;
-  border: 1px solid black;
-  margin: 2rem 0;
   display: flex;
   flex-direction: column;
-  padding: 0.8rem;
+  padding: 1rem 0;
 }
 .controller {
   width: 100%;
-  max-width: 600px;
   display: flex;
   align-items: center;
-  flex-wrap: wrap;
+  gap: 0.5rem;
 }
+
 #message {
-  flex: 3;
+  width: 100%;
   outline: none;
-  margin-right: 0.5rem;
+  padding: 1rem 0.5rem;
+  border-radius: 0.5rem;
+  border: 1px solid rgb(228, 228, 228);
 }
-#btn-send {
-  flex: 1;
-  margin-left: 0.5rem;
+
+.btn-send {
   background: none;
   text-transform: uppercase;
   letter-spacing: 2px;
-}
-#message,
-.btn-send {
-  padding: 6px;
-  border: 1px solid black;
+  border: 1px solid rgb(228, 228, 228);
+  color: black;
+  padding: 1rem 2rem;
+  cursor: pointer;
+  border-radius: 0.5rem;
 }
 
 .modal {
@@ -69,10 +85,30 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 1rem;
+  gap: 2rem;
   background-color: #fefefe;
-  margin: 15% auto;
+  margin: 0 auto;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
   padding: 20px;
   border: 1px solid #888;
-  width: 80%;
+  width: fit-content;
+  border-radius: 2rem;
+}
+
+.form-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+#username-input {
+  min-width: 250px;
+  outline: none;
+  padding: 1rem 0.5rem;
+  border-radius: 0.5rem;
+  border: 1px solid rgb(228, 228, 228);
 }

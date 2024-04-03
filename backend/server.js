@@ -9,7 +9,7 @@ const randomId = () => {
 
 const io = require("socket.io")(4000, {
   cors: {
-    origin: ["http://localhost:8080", "http://192.168.56.1:8080"],
+    origin: ["http://localhost:8080", "http://192.168.56.1:8080", "http://192.168.0.22:8080"],
   },
 });
 
