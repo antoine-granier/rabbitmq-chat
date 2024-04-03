@@ -58,9 +58,8 @@ io.on("connection", (socket) => {
     sessionID: socket.sessionID,
     userID: socket.userID,
   });
-  amqp.connect("amqp://localhost", (err0, connection) => {
+  amqp.connect("amqp://user:password@rabbitmq", (err0, connection) => {
     if (err0) {
-      console.log(err0);
       throw err0;
     }
     connection.createChannel((err1, channel) => {
