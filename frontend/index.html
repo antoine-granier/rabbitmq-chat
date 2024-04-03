@@ -9,21 +9,28 @@
     <title>Websocket-RabbitMQ</title>
   </head>
   <body>
-    <h1>Chat</h1>
+    <header>
+      <h1>Chat</h1>
+      <div class="name"></div>
+    </header>
     <div class="container"></div>
     <form class="controller">
-      <input type="text" id="message" autofocus />
+      <input type="text" id="message" />
       <button type="submit" class="btn-send">Send</button>
     </form>
     <form class="modal" id="username-form">
       <div class="modal-content">
         <h2>Enter your username</h2>
-        <input
-          type="text"
-          id="username-input"
-          placeholder="Username"
-          required />
-        <button class="btn-send" type="submit">Submit</button>
+        <div class="form-content">
+          <input
+            type="text"
+            id="username-input"
+            placeholder="Username"
+            required 
+            autofocus 
+          />
+          <button class="btn-send" type="submit">Submit</button>
+        </div>
       </div>
     </form>
   </body>

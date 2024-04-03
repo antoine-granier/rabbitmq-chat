@@ -6,6 +6,7 @@ const chat = document.querySelector(".container");
 const input = document.querySelector("#message");
 const form = document.querySelector(".controller");
 const body = document.getElementsByTagName("body")[0];
+const nameContainer = document.querySelector(".name")
 
 body.onload = () => {
   const sessionID = localStorage.getItem("sessionID");
@@ -17,6 +18,7 @@ body.onload = () => {
     if (input.value) {
       localStorage.setItem("username", input.value);
       form.style.display = "none";
+      nameContainer.textContent = input.value
       socket.auth = { sessionID: Number(sessionID), username: input.value };
       socket.connect();
     }
