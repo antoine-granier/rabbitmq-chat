@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -13,7 +13,18 @@
     <div class="container"></div>
     <form class="controller">
       <input type="text" id="message" autofocus />
-      <button type="submit" id="btn-send">Send</button>
+      <button type="submit" class="btn-send">Send</button>
+    </form>
+    <form class="modal" id="username-form">
+      <div class="modal-content">
+        <h2>Enter your username</h2>
+        <input
+          type="text"
+          id="username-input"
+          placeholder="Username"
+          required />
+        <button class="btn-send" type="submit">Submit</button>
+      </div>
     </form>
   </body>
 </html>
