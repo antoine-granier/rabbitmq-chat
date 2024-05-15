@@ -10,7 +10,9 @@ COPY . .
 
 EXPOSE 4000
 
-COPY start.sh .
-RUN chmod +x start.sh
+# COPY start.sh .
+# RUN chmod +x start.sh
 
-CMD ["./start.sh"]
+# CMD ["./start.sh"]
+
+CMD ["npm", "run", "dockercmd"]

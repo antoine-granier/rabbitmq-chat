@@ -20,6 +20,7 @@ services:
       - ./backend:/usr/src/app
     depends_on:
       - rabbitmq
+    restart: on-failure
 
   chat-frontend:
     build:

@@ -3,8 +3,9 @@
   "name": "rabbitmq-chat-backend",
   "description": "web server and consumer of websocket and rabbitmq",
   "scripts": {
-    "server": "nodemon server",
-    "consumer": "node consumer"
+    "server": "node server",
+    "consumer": "node consumer",
+    "dockercmd": "npm run server & npm run consumer"
   },
   "dependencies": {
     "amqplib": "^0.8.0",
