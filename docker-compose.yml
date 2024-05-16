@@ -9,8 +9,8 @@ services:
       RABBITMQ_DEFAULT_PASS: password
     healthcheck:
       test: ["CMD", "rabbitmqctl", "status"]
-      interval: 3s
-      timeout: 2s
+      interval: 5s
+      timeout: 5s
       retries: 3
 
   chat-frontend:

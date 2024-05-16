@@ -26,3 +26,12 @@ front ---------> back
                                                                |
                                                             server.js -----------> front
                                                                          socket
+
+En cas de problème, avec le lancement du conteneur du back il est possible qu'il faille augmenter le timeout et l'interval du healthcheck du conteneur Rabbitmq.
+En cas de problème de droits, lancer les conteneurs en sudo.
+
+
+Lancement:
+
+- docker compose build (l'option --no-cache peut être nécessaire dans certains cas)
+- docker compose up
