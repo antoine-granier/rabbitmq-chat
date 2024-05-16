@@ -1,18 +1,13 @@
-FROM node:14
+FROM node:alpine
 
-WORKDIR /usr/src/app
+WORKDIR /app
 
 COPY package*.json ./
 
-RUN npm install
+RUN npm ci
 
 COPY . .
 
-EXPOSE 4000
-
-# COPY start.sh .
-# RUN chmod +x start.sh
-
-# CMD ["./start.sh"]
+EXPOSE 3000
 
 CMD ["npm", "run", "dockercmd"]
