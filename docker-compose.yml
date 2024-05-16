@@ -16,7 +16,6 @@ services:
   chat-frontend:
     build:
       context: ./frontend
-      dockerfile: Dockerfile
     ports:
       - "8080:8080"
     volumes:
@@ -25,7 +24,6 @@ services:
   chat-backend:
     build:
       context: ./backend
-      dockerfile: Dockerfile
     ports:
       - "4000:4000"
     volumes:
