@@ -35,3 +35,9 @@ Lancement:
 
 - docker compose build (l'option --no-cache peut être nécessaire dans certains cas)
 - docker compose up
+
+Sécurité :
+Les logins sont srocké dans un .env
+
+Monitoring : 
+Le plugin prometheus est activé dans rabbitmq puis grafata permet de visualiser les données récupérées, il est possible de mettre en place des alertes.
