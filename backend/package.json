@@ -3,14 +3,15 @@
   "name": "rabbitmq-chat-backend",
   "description": "web server and consumer of websocket and rabbitmq",
   "scripts": {
-    "server": "nodemon server",
-    "consumer": "node consumer"
-  },
-  "dependencies": {
-    "amqplib": "^0.8.0",
-    "socket.io": "^4.4.1"
+    "server": "node server",
+    "consumer": "node consumer",
+    "dockercmd": "npm run server & npm run consumer"
   },
   "devDependencies": {
-    "nodemon": "^2.0.15"
+    "nodemon": "^3.1.0"
+  },
+  "dependencies": {
+    "amqplib": "^0.10.4",
+    "socket.io": "^4.7.5"
   }
 }
